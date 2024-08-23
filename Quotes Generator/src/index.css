@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+body {
+	background: linear-gradient(135deg,#ee7752, #e73c7e, #23a6d5, #23d5ab );
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.title{
+  text-align: center;
+  color: white;
+  font-family:  arial;
+  padding-top: 100px;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+}
+
+.random-quote-generator {
+    padding-top: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+  
+  .quote-text {
+    font-size: 45px;
+    padding-top: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  
+  .quote-author {
+    font-size: 30px;
+    font-variant: small-caps;
+  }
+  
+  .generate-button {
+    background-color: rgba(0, 0, 0, 0.373);
+    color: white;
+    border: none;
+    border-radius: 45px;
+    font-size: 20px;
+    padding: 10px 18px;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  .generate-button:hover {
+    background-color: rgba(255, 255, 255, 0.373);
+    color:black;
+  }
+  
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.477);
+    color: white;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    padding: 20px;
+  }
